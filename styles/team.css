@@ -1,0 +1,141 @@
+/* Header */
+header {
+    background-color: #4B0082; /* Purple */
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+}
+  
+.logo-title-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+  
+#logo {
+    padding: 1vw;
+    width: 150px;
+    height: auto;
+}
+  
+header h1 {
+    margin: 0;
+    margin-left: 1rem; /* Add some space between the logo and title */
+}
+  
+#main-nav {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+  
+#main-nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+  
+#main-nav ul li {
+    margin-right: 1rem;
+}
+  
+#main-nav ul li:last-child {
+    margin-right: 0;
+}
+  
+#main-nav a {
+    color: #FFFFFF; /* White */
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+  
+#main-nav a:hover {
+    color: #FFA500; /* Orange */
+}
+    
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    padding: 2rem;
+}
+/* Team page styles */
+
+.centered {
+    
+    text-align: center;
+    margin-bottom: 60px; /* Add some space below the header */
+}
+  
+.team-members {
+    display: flex;
+    justify-content: center;
+    gap: 40px; /* Add some space between team members */
+}
+  
+.team-member {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #FFA500; /* Orange */
+    border-radius: 5px;
+    padding: 1rem;
+    width: calc(50% - 20px); /* Calculate width to ensure they are side by side */
+}
+  
+.team-member img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+}
+  
+.team-member h2 {
+    margin-bottom: 10px;
+}
+  
+.team-member p {
+    margin-bottom: 20px;
+}
+  
+.team-member a {
+    display: inline-block;
+    margin: 0 5px;
+    text-decoration: none;
+}
+  
+.team-member a img {
+    width: 32px;
+    height: auto;
+}
+    
+.social-media {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+  
+.social-media img {
+    width: 30px;
+    height: 30px;
+}
+
+/* Add this media query at the end of the file */
+@media (max-width: 767px) {
+    /* Adjustments for elements specific to team.html */
+    .team-members {
+        flex-direction: column;
+    }
+
+    .team-member {
+        margin-bottom: 2rem;
+    }
+}
+
+  
